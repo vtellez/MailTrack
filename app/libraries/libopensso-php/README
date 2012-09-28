@@ -1,0 +1,4 @@
+Requisites:
+
+ * PHP 5
+ * OpenSSL support in PHP

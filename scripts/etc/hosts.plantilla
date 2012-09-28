@@ -1,0 +1,8 @@
+NOMBRE_LOG,IP_HOST,LOG_PATH,PROGRAMA
+
+
+ejemplo:
+entrada_smtpd,192.168.17.213,/var/log/qmail/smtpd/current,vacio.pl
+antivirus1_maillog,192.168.17.111,/var/log/maillog,antivirus.pl
+listas_maillog,192.168.15.111,/var/log/maillog,listas.pl
+salida_send,192.168.13.142,/var/log/qmail/current,salida.pl

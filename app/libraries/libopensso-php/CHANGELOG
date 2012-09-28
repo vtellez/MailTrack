@@ -1,0 +1,3 @@
+0.3
+	* Configuration packs/bundles with certificate validation support
+	* Modified "User Agent" string
