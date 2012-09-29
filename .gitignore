@@ -1,5 +1,6 @@
 *.swp
 *.log
+.DS_*
 app/config/config.php
 app/config/database.php
 scripts/logs/
@@ -10,4 +11,4 @@ scripts/bin/texto.pl
 scripts/bin/prueba.pl
 scripts/bin/recupera.pl
 scripts/bin/rclogin_viejo_formato.pl
-.DS_*
+scripts/bin/seguimiento_flag_lock
