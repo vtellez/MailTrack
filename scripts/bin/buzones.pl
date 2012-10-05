@@ -55,7 +55,7 @@ while (<IN>) {
 	} #elseif
 #	elsif($_=~/(.+) dovecot: lda\((.+)\): sieve: msgid=<(.+)>: sent vacation response to <(.+)>/){
 #	} #elseif
-#       elsif($_=~/(.+) postfix/smtpd(.+): NOQUEUE: reject: RCPT from unknown[192.168.3.12]: 550 5.1.1 <bellidomgb@us.es>: Recipient address rejected: User unknown in virtual mailbox table; from=<info@llamanosfuturo.es> to=<bellidomgb@us.es>/){
+#       elsif($_=~/(.+) postfix/smtpd(.+): NOQUEUE: reject: RCPT from unknown[192.168.3.12]: 550 5.1.1 <bellidomgb@us.es>: Recipient address rejected: User unknown in virtual mailbox table; from=<(.+)> to=<(.+)>/){
 #       } #elseif
 #       elsif($_=~/(.+) dovecot: lda\((.+)\): sieve: msgid=<(.+)>: sent vacation response to <(.+)>/){
 #       } #elseif
