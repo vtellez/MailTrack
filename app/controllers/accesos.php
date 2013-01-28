@@ -128,8 +128,6 @@ class Accesos extends CI_Controller {
 			$filtro = "todos";
 		}
 
-
-
                 //Guardamos la consulta en la sesion del usuario:
                 $this->session->set_userdata('where_consulta', $where);
 

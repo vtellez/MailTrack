@@ -8,30 +8,6 @@ CREATE TABLE IF NOT EXISTS estados (
         PRIMARY KEY(codigo)
         ) ENGINE=InnoDB;
 
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (1,'_ok','_warning','_warning','Correo aceptado en la estafeta de entrada de correo.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (31,'_ok','_ok','_wait','Correo válido (no virus, no spam) encolado en máquinas antivirus.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (51,'_ok','_ok','_wait','Correo válido encolado en la estafeta de listas de distribución.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (131,'_ok','_warning','_wait','Correo encolado en antivirus, marcado como SPAM.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (151,'_ok','_ok','_wait','Correo encolado en la estafeta de salida esperando a ser entregado al MTA destino.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (161,'_ok','_warning','_wait','Correo encolado la estafeta de salida, marcado como SPAM.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (171,'_ok','_ok','_wait','Correo encolado en la estafeta de buzones esperando a ser entregado al buzón del usuario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (181,'_ok','_warning','_wait','Correo encolado en la estafeta de buzones, marcado como SPAM.');
-
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (331,'_ok','_warning','_warning','Correo SPAM entregado con éxito en el buzón del destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (332,'_ok','_warning','_warning','Correo SPAM entregado con éxito en el MTA remoto destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (333,'_ok','_warning','_warning','Correo SPAM redirigido a una cuenta de correo secundaria desde el buzón del destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (334,'_ok','_warning','_warning','Correo SPAM entregado con éxito al dominio virtual o alias de la dirección destino.');
-
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (351,'_ok','_ok','_ok','Correo entregado con éxito en el buzón del destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (352,'_ok','_ok','_ok','Correo entregado con éxito al MTA remoto del destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (362,'_ok','_ok','_ok','Correo redirigido a una cuenta de correo secundaria desde el buzón del destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (372,'_ok','_ok','_ok','Correo entregado con éxito al dominio virtual o alias de la dirección destino.');
-
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (431,'_ok','_error','_error','Correo marcado como virus o malware. No será entregado al destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (432,'_ok','_error','_error','Correo marcado como violación de política. No será entregado al destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (433,'_ok','_error','_error','Correo marcado como violación de política de mailman. No será entregado al destinatario.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (452,'_ok','_ok','_error','Correo no entregado al MTA destino.');
-INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (472,'_ok','_ok','_error','Correo no entregado al buzón del usuario.');
 
 CREATE TABLE IF NOT EXISTS mensajes (
         mid INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -89,8 +65,6 @@ CREATE TABLE IF NOT EXISTS historial (
 	) ENGINE=InnoDB;
 
 
-
-
 CREATE TABLE IF NOT EXISTS `ci_sessions` (
 	session_id varchar(40) DEFAULT '0' NOT NULL,
 	session_start int(10) unsigned DEFAULT 0 NOT NULL,
@@ -128,8 +102,6 @@ CREATE TABLE IF NOT EXISTS estadisticas (
 
 INSERT INTO estadisticas (accesos,pop,imap,buzonweb,redirecciones,alias,externo,interno,procesados,ham,spam,virus,politicas,listas,listas_error,busquedas,informes,visitas) VALUES (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 
-
-
 CREATE TABLE IF NOT EXISTS accesos (
         aid INT UNSIGNED NOT NULL AUTO_INCREMENT,
         usuario VARCHAR(200) NOT NULL,
@@ -149,6 +121,7 @@ CREATE TABLE IF NOT EXISTS accesos (
 
         PRIMARY KEY(aid)
         ) ENGINE=InnoDB;
+
 
 CREATE TABLE IF NOT EXISTS est_horas (
         eid INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -268,3 +241,33 @@ CREATE TABLE IF NOT EXISTS est_anios (
 
         PRIMARY KEY(eid)
         ) ENGINE=InnoDB;
+
+
+
+
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (1,'_ok','_warning','_warning','Correo aceptado en la estafeta de entrada de correo.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (31,'_ok','_ok','_wait','Correo válido (no virus, no spam) encolado en máquinas antivirus.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (51,'_ok','_ok','_wait','Correo válido encolado en la estafeta de listas de distribución.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (131,'_ok','_warning','_wait','Correo encolado en antivirus, marcado como SPAM.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (151,'_ok','_ok','_wait','Correo encolado en la estafeta de salida esperando a ser entregado al MTA destino.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (161,'_ok','_warning','_wait','Correo encolado la estafeta de salida, marcado como SPAM.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (171,'_ok','_ok','_wait','Correo encolado en la estafeta de buzones esperando a ser entregado al buzón del usuario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (181,'_ok','_warning','_wait','Correo encolado en la estafeta de buzones, marcado como SPAM.');
+
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (331,'_ok','_warning','_warning','Correo SPAM entregado con éxito en el buzón del destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (332,'_ok','_warning','_warning','Correo SPAM entregado con éxito en el MTA remoto destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (333,'_ok','_warning','_warning','Correo SPAM redirigido a una cuenta de correo secundaria desde el buzón del destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (334,'_ok','_warning','_warning','Correo SPAM entregado con éxito al dominio virtual o alias de la dirección destino.');
+
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (351,'_ok','_ok','_ok','Correo entregado con éxito en el buzón del destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (352,'_ok','_ok','_ok','Correo entregado con éxito al MTA remoto del destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (362,'_ok','_ok','_ok','Correo redirigido a una cuenta de correo secundaria desde el buzón del destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (372,'_ok','_ok','_ok','Correo entregado con éxito al dominio virtual o alias de la dirección destino.');
+
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (431,'_ok','_error','_error','Correo marcado como virus o malware. No será entregado al destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (432,'_ok','_error','_error','Correo marcado como violación de política. No será entregado al destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (433,'_ok','_error','_error','Correo marcado como violación de política de mailman. No será entregado al destinatario.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (452,'_ok','_ok','_error','Correo no entregado al MTA destino.');
+INSERT INTO estados (codigo,efrom,email,eto,descripcion) VALUES (472,'_ok','_ok','_error','Correo no entregado al buzón del usuario.');
+
+

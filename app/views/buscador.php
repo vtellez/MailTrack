@@ -150,7 +150,7 @@
     <script type="text/javascript">//<![CDATA[
 
 	$(function() {
-		$( "#fecha1" ).datepicker( { minDate: "-7D", maxDate: "+0D"});
+		$( "#fecha1" ).datepicker( { minDate: "-20D", maxDate: "+0D"});
 	});
 
     //]]></script>
@@ -158,7 +158,7 @@
     <script type="text/javascript">//<![CDATA[
 
         $(function() {
-                $( "#fecha2" ).datepicker( { minDate: "-7D", maxDate: "+0D"});
+                $( "#fecha2" ).datepicker( { minDate: "-20D", maxDate: "+0D"});
         });
 
     //]]></script>

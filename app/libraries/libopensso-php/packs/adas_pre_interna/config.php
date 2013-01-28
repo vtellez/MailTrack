@@ -1,5 +1,5 @@
 <?php
-define('OPENSSO_BASE_URL', 'https://ssopre.us.es/opensso/');
+define('OPENSSO_BASE_URL', 'https://ssopre.us.es/OPENSSO/index.php/');
 define('OPENSSO_COOKIE_NAME', 'iPlanetDirectoryPro');
 define('OPENSSO_LOGIN_URL',      OPENSSO_BASE_URL . 'UI/Login');
 define('OPENSSO_LOGOUT_URL',     OPENSSO_BASE_URL . 'UI/Logout');

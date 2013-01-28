@@ -249,8 +249,9 @@ class Mensajes extends CI_Controller {
                                         $where = $where." AND virus LIKE '$cadena' ";
                                 }
 
-                                if($_POST['fecha1'] != "Cualquier fecha")
+                                if($_POST['fecha1'] != "Cualquier fecha"){
                                        $where = $where." AND fecha >= ".strtotime($_POST['fecha1']);
+				}
 
                                 if($_POST['fecha2'] != "Cualquier fecha"){
 					$fecha2 = strtotime($_POST['fecha2']) + 86400;
@@ -295,6 +296,7 @@ class Mensajes extends CI_Controller {
 		$mensajes = $this->db->get('mensajes',$config['per_page'], (int)$this->uri->segment(6));
 		
 		$this->db->where($where);
+
 		$totales = $this->db->get('mensajes');
                 $config['total_rows'] = $totales->num_rows();
                 $num_rows =  $config['total_rows'];  
