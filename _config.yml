@@ -1,8 +1,0 @@
-auto: true
-server: true
-server_port: 5555
-destination: ./_site
-source: ./_src/
-pygments: true
-permalink: pretty
-url: http://choquito.us.es/segj/
