@@ -410,7 +410,7 @@ hr.invisible {
 /* ----------------------- */
 /* - 2.1 body style - */
 body {
-  background: #f2f2f4 url(../images/backgrounds/bgnoise_lg.png);
+  background: #f2f2f4 url(../images/backgrounds/little_pluses.png);
 }
 
 /* - 2.2 wrappers and containers - */
@@ -1669,9 +1669,9 @@ ul.inline li {
 }
 
 .accordion-heading {
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
-  border: 1px solid #f2f2f4;
+  border: 1px solid #d8d8d8;
   -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset, 0 0px 5px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset, 0 0px 5px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset, 0 0px 5px rgba(0, 0, 0, 0.05);
@@ -1681,7 +1681,7 @@ ul.inline li {
   display: block;
   font-family: FontAwesome;
   content: "\f106";
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1em;
   right: 1em;
   top: 50%;
@@ -1693,6 +1693,7 @@ ul.inline li {
 
 .accordion-inner {
   background-color: #f2f2f4;
+  border: 1px solid #d8d8d8;
   -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset;
   -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset;
@@ -1744,6 +1745,10 @@ ul.inline li {
   border: 1px solid #dddddd;
 }
 
+.nav-pills {
+  margin-top:20px;
+}
+
 .tab-content {
   background-color: white;
   padding: 12px;
@@ -1783,7 +1788,13 @@ ul.inline li {
 }
 
 .tab-pills .tab-content {
-  border-top: 1px solid #d8d8d8;
+  margin-top:-140px;
+  border-top: 0px solid #d8d8d8;
+  border-bottom: 0px solid #d8d8d8;
+  border-right: 0px solid #d8d8d8;
+  border-left: 0px solid #d8d8d8;
+  height: 100%;
+  overflow: none;  
 }
 
 /* - 7.13 Alerts - */
