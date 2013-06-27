@@ -14,6 +14,12 @@ Official website
 You can find more info about this project at http://seguimiento.org.es/
 
 
+Documentation
+------------------
+
+You can find this project's documentation at http://seguimiento.org.es/doc/
+
+
 Thanks
 ---------------
 
