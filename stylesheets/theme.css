@@ -1666,7 +1666,7 @@ ul.inline li {
 }
 
 .accordion-heading {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   border: 1px solid #d8d8d8;
   -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05) inset, 0 0px 5px rgba(0, 0, 0, 0.05);
