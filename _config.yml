@@ -5,3 +5,4 @@ destination: ./_site
 pygments: true
 permalink: pretty
 url: http://seguimiento.org.es/
+appn: Seguimiento

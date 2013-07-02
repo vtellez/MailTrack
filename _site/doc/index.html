@@ -62,7 +62,7 @@
                 <li ><a 
                     href="http://choquito.us.es/segj/pricing">Pricing</a></li>
                 <li class="active"><a
-                    href="http://choquito.us.es/segj/doc">Documentation</a></li>
+                    href="http://choquito.us.es/segj/doc">Doc</a></li>
                 <li ><a
                     href="http://choquito.us.es/segj/contact">Contact</a></li>
               </ul>
@@ -261,14 +261,14 @@
                 <p>Seguimiento puede descargarse de dos formas:</p>
                 <br/>
                 <p><b>1)</b> Descargando directamente la <b>versión empaquetada en tar.gz</b> de la última release estable:</b></p>
-                <pre><i class="icon-download-alt"></i> <a href="http://github.com/vtellez/seguimiento/tarball/master">Descargar tar.gz</a></pre>
+                <pre><i class="icon-download-alt"></i> <a href="http://github.com/vtellez/Seguimiento/tarball/master">Descargar tar.gz</a></pre>
                 <br/>
                 <p><b>2)</b> Utilizando el <b>sistema de versiones (git)</b> del proyecto en github:</b></p>
-                <pre>git://github.com/vtellez/seguimiento.git</pre>
+                <pre>git://github.com/vtellez/Seguimiento.git</pre>
 
                 <p>ó</p>
 
-                <pre>https://github.com/vtellez/seguimiento.git</pre>
+                <pre>https://github.com/vtellez/Seguimiento.git</pre>
 
 
                         <section id="deploy"><br/>
@@ -277,7 +277,7 @@
                     
                     <pre>
                     <ul>
-                    <li><b>$PATH_A_SEGUIMIENTO</b>: Esta variable hace referencia a la ruta donde se ha desplegado la instalación. <br/>Por ejemplo, la ruta podría ser <code>/var/www/Seguimiento</code></li>
+                    <li><b>$PATH_A_Seguimiento</b>: Esta variable hace referencia a la ruta donde se ha desplegado la instalación. <br/>Por ejemplo, la ruta podría ser <code>/var/www/Seguimiento</code></li>
                     </ul>
                     </pre>
 
@@ -290,11 +290,11 @@
                  Enter password: (el de root)
                  </pre>
                  <pre>
-                 mysql> GRANT ALL PRIVILEGES ON seguimiento.* TO seguimiento@localhost
-                        IDENTIFIED BY 'password-de-seguimiento';
+                 mysql> GRANT ALL PRIVILEGES ON Seguimiento.* TO Seguimiento@localhost
+                        IDENTIFIED BY 'password-de-Seguimiento';
                  </pre>
                  <pre>
-                 mysql> CREATE DATABASE seguimiento;
+                 mysql> CREATE DATABASE Seguimiento;
                  </pre>
                  <pre>
                  mysql> FLUSH PRIVILEGES;
@@ -302,7 +302,7 @@
 
                 <p>Creación de las tablas de Seguimiento de mensajes</p>
                 <pre>
-                 # mysql -useguimiento -p seguimiento < $PATH_A_SEGUIMIENTO/mysql-database/schema.sql
+                 # mysql -uSeguimiento -p Seguimiento < $PATH_A_Seguimiento/mysql-database/schema.sql
                  </pre>
                       
 
@@ -314,31 +314,31 @@
                         <section id="general_config"><br/>
                       <h2>Configuración general (config.php)</h2>
 
-                <p>$PATH_A_SEGUIMIENTO/app/config/config.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Configurar este fichero para definir la dirección base de la aplicación, la lista de administradores, número de mensajes por página, etc etc. Crear directorio de logs de acuerdo a lo configurado en este fichero.</p>
+                <p>$PATH_A_Seguimiento/app/config/config.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Configurar este fichero para definir la dirección base de la aplicación, la lista de administradores, número de mensajes por página, etc etc. Crear directorio de logs de acuerdo a lo configurado en este fichero.</p>
 
                         <br/>  
                         <section id="database_config"><br/>
                       <h2>Configuación de la base de datos (database.php)</h2>
 
-                <p>$PATH_A_SEGUIMIENTO/app/config/database.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye la información relativa a la base de datos de la aplicación así como al usuario para ésta, para permitir así la conexión desde php.</p>
+                <p>$PATH_A_Seguimiento/app/config/database.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye la información relativa a la base de datos de la aplicación así como al usuario para ésta, para permitir así la conexión desde php.</p>
 
                         <br/>  
                         <section id="scripts_config"><br/>
                       <h2>Configuración de logs y scripts (config.pl)</h2>
 
-                <p>$PATH_A_SEGUIMIENTO/scripts/etc/config.pl.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye información acerca del proceso de parseado de los logs: Definición del dominio principal de la institución, tiempo de vida (en días) de los mensajes en la base de datos, configuración de datos para la conexión con la base de datos desde perl, etc.</p>
+                <p>$PATH_A_Seguimiento/scripts/etc/config.pl.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye información acerca del proceso de parseado de los logs: Definición del dominio principal de la institución, tiempo de vida (en días) de los mensajes en la base de datos, configuración de datos para la conexión con la base de datos desde perl, etc.</p>
 
                         <section id="logs_config"><br/>
-                <p>$PATH_A_SEGUIMIENTO/scripts/etc/hosts.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". En este fichero debe incluirse la información de los logs que se quiera procesar. En el propio fichero esta incluido un ejemplo para comprender la sintaxis que se utiliza en el.</p>
+                <p>$PATH_A_Seguimiento/scripts/etc/hosts.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". En este fichero debe incluirse la información de los logs que se quiera procesar. En el propio fichero esta incluido un ejemplo para comprender la sintaxis que se utiliza en el.</p>
 
-                <p>$PATH_A_SEGUIMIENTO/scripts/bin/actualiza.sh: En este fichero tan solo debe editarse la primera línea no comentada, que hace referencia a la ruta donde se encuentra alojado el directorio "scripts".</p>
+                <p>$PATH_A_Seguimiento/scripts/bin/actualiza.sh: En este fichero tan solo debe editarse la primera línea no comentada, que hace referencia a la ruta donde se encuentra alojado el directorio "scripts".</p>
 
 
                         <section id="ssh_config"><br/>
                       <h2>Configuración sshs</h2>
                 <p>Seguimiento de mensajes obtiene los logs de las máquinas de forma remota utilizando un protocolo de transmisión de ficheros segura basado en el protocolo ssh (comando scp).</p>
 
-                <p>Es por ello que para que el script principal funcione correctamente, debemos dar permiso a las máquinas remotas para que seguimiento obtenga los logs sin necesidad de establecer un usuario y contraseña. Para ello, se utiliza los certificados de clave pública de la propia máquina.</p>
+                <p>Es por ello que para que el script principal funcione correctamente, debemos dar permiso a las máquinas remotas para que Seguimiento obtenga los logs sin necesidad de establecer un usuario y contraseña. Para ello, se utiliza los certificados de clave pública de la propia máquina.</p>
 
                 <p>Deberemos copiar la clave pública de la máquina que procesará los logs (alojada generalmente en $HOME/.ssh/id_rsa.pub) en la lista de servidores autorizados en las máquinas remotas (definidas normalmente en el archivo $HOME/.ssh/authorized_keys)</p>
 
@@ -347,15 +347,15 @@
 
                 <p>Seguimiento de mensajes, requiere que se añadan varias entradas en la lista de tareas automáticas del sistema:</p>
                 <pre>
-                #SEGUIMIENTO: Ejecución del script que recorre los logs de correo y los guarda en la base de datos<br/>
-                */10 0-4,6-23 * * * bash $PATH_A_SEGUIMIENTO/scripts/bin/actualiza.sh hosts > /tmp/salida<br/>
+                #Seguimiento: Ejecución del script que recorre los logs de correo y los guarda en la base de datos<br/>
+                */10 0-4,6-23 * * * bash $PATH_A_Seguimiento/scripts/bin/actualiza.sh hosts > /tmp/salida<br/>
                 <br/>
-                #SEGUIMIENTO: Cada dia borramos los mensajes y accesos más antiguos la base de datos<br/>
-                1 5 * * * bash $PATH_A_SEGUIMIENTO/scripts/bin/borrado_bbdd.sh<br/>
+                #Seguimiento: Cada dia borramos los mensajes y accesos más antiguos la base de datos<br/>
+                1 5 * * * bash $PATH_A_Seguimiento/scripts/bin/borrado_bbdd.sh<br/>
  
                <br/>
-                #SEGUIMIENTO: Calculo de indicadores por horas/días/meses<br/>
-                7 0 * * * perl $PATH_A_SEGUIMIENTO/scripts/bin/indicadores.pl<br/>
+                #Seguimiento: Calculo de indicadores por horas/días/meses<br/>
+                7 0 * * * perl $PATH_A_Seguimiento/scripts/bin/indicadores.pl<br/>
                 </pre>
 
                 <p>La primera de ellas hace referencia a la frecuencia con la que se quiere que se lean los logs de las distintas máquinas. Dicho de otra forma, con que margen de tiempo con respecto al tiempo real, queremos que se actualicen los datos en la base de datos. En este ejemplo, la frecuencia de parseo sería cada 10 minutos.</p>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <title>Seguimiento {% if page.title %} - {{ page.title }} {% endif %}</title>
-  <meta content="Seguimiento app website" name="description" />
+    <title>{{site.appn}} {% if page.title %} - {{ page.title }} {% endif %}</title>
+  <meta content="{{site.appn}} app website" name="description" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
                 <li {% if page.id == 'pricing') %}class="active"{% endif %}><a 
                     href="{{site.url}}pricing">Pricing</a></li>
                 <li {% if page.id == 'doc') %}class="active"{% endif %}><a
-                    href="{{site.url}}doc">Documentation</a></li>
+                    href="{{site.url}}doc">Doc</a></li>
                 <li {% if page.id == 'contact') %}class="active"{% endif %}><a
                     href="{{site.url}}contact">Contact</a></li>
               </ul>
@@ -82,7 +82,7 @@
           <div class="span6 small-screen-center">
             <h2 style="text-transform:none;">
               <a href="{{site.url}}">
-                Seguimiento
+                {{site.appn}}
 	            </a>
                &nbsp;&nbsp;
               <a data-iconcolor="#42576a" href="http://github.com/vtellez/seguimiento">
