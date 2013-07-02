@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <title>Seguimiento  - Documentation </title>
-  <meta content="Seguimiento app website" name="description" />
+    <title>MailTrack  - Documentation </title>
+  <meta content="MailTrack app website" name="description" />
+  <!--
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+-->
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,20 +40,12 @@
           <div class="container-fluid">
             <h1 class="logo">
               <a href="http://choquito.us.es/segj/">
-  
-              <span class="icon-stack" style="font-size:30px; margin-top:-10px; margin-bottom:10px; margin-right:-2px; color:#72b9d3">
+              <span class="icon-stack" style="font-size:30px; margin-top:-10px; margin-bottom:10px; margin-right:-2px; color:#FF9966;">
                 <i class="icon-envelope icon-stack-base"></i>               
-                <i class="icon-info" style="color:#f8f8f8; font-size:40px; margin-top:5px;"></i>        
+                <i class="icon-info" style="color:#f8f8f8; font-size:40px; margin-top:5px;"></i>
               </span>
-              <font style="color:#ef9a36;">Seg</font><font style="color:#f6ba18;">uim</font><font style="color:#94ac26;">ien</font><font style="color:#579e34;">to</font></a>
-               <!--
-              <span class="icon-stack" style="font-size:35px; margin-top:-10px; margin-bottom:10px; margin-right:0px; color:#72b9d3">
-                <i class="icon-cloud icon-stack-base"></i>               
-                <i class="icon-reply icon-flip-vertical icon-flip-horizontal" style="color:#f8f8f8; font-size:35px; margin-top:5px;"></i>        
-              </span>
-              <font style="color:#72b9d3;">Recupera</font>
-                </a>
--->                
+              <font style="color:#ef9a36;">Mail</font><font style="color:#f6ba18;">Track</font>
+            </a>
             </h1>
             <div class="nav-collapse collapse">
               <ul class="nav pull-right" style="margin-top:10px;">
@@ -86,7 +80,7 @@
             <div class="span12">
  <p class="lead text-center">
   <img src="http://choquito.us.es/segj/images/document.png"/><br/>
-      Check the technical documentation for installing and setup Seguimiento
+      Check the technical documentation for installing and setup MailTrack
     </p>
             </div>
           </div>
@@ -215,13 +209,13 @@
                         <section id="definition"><br/>
                         <section id="how"><br/>
                           <p>
-                            Seguimiento processes remote log files (obtained through web services or via ssh) to analyze them and keep important information in the database server and serve it through an intuitive web interface for users.
+                            MailTrack processes remote log files (obtained through web services or via ssh) to analyze them and keep important information in the database server and serve it through an intuitive web interface for users.
                             </p>
                             <br/><img class="img-polaroid" src="http://choquito.us.es/segj/images/assets/func_b.png"/><br/>
                           </p>
-                          <pre class="code"><center>This is how Seguimiento works</center></pre><br/>
+                          <pre class="code"><center>This is how MailTrack works</center></pre><br/>
                           <p>
-                            Seguimiento interpret and crosslink information between logs of different software programs. In addition, you can customize what software we want to analyze, making the application is certainly very flexible and functioanl.
+                            MailTrack interpret and crosslink information between logs of different software programs. In addition, you can customize what software we want to analyze, making the application is certainly very flexible and functioanl.
                           </p>
 
                         <section id="license"><br/>
@@ -234,7 +228,7 @@
                         <section id="prerequisites"><br/>
                       <h2>Prerrequisitos</h2>
 
-                <p>Seguimiento necesita una máquina con sistema operativo <b>GNU/Linux</b> para funcionar. Las especificaciones ténicas de la máquina (CPU, GB de memoria RAM, GB de disco duro, etc., dependerán del volumen de correo que se registre en la institución/organismo donde se esté instalando la aplicación).</p>
+                <p>MailTrack necesita una máquina con sistema operativo <b>GNU/Linux</b> para funcionar. Las especificaciones ténicas de la máquina (CPU, GB de memoria RAM, GB de disco duro, etc., dependerán del volumen de correo que se registre en la institución/organismo donde se esté instalando la aplicación).</p>
 
                 <p>Software necesario en la máquina (versiones mínimas):</p>
                 <pre>
@@ -256,19 +250,19 @@
                 </pre>
                         <section id="license"></br>
                         <section id="download"></br>
-                      <h2>Download Seguimiento</h2>
+                      <h2>Download MailTrack</h2>
 
-                <p>Seguimiento puede descargarse de dos formas:</p>
+                <p>MailTrack puede descargarse de dos formas:</p>
                 <br/>
                 <p><b>1)</b> Descargando directamente la <b>versión empaquetada en tar.gz</b> de la última release estable:</b></p>
-                <pre><i class="icon-download-alt"></i> <a href="http://github.com/vtellez/Seguimiento/tarball/master">Descargar tar.gz</a></pre>
+                <pre><i class="icon-download-alt"></i> <a href="http://github.com/vtellez/MailTrack/tarball/master">Descargar tar.gz</a></pre>
                 <br/>
                 <p><b>2)</b> Utilizando el <b>sistema de versiones (git)</b> del proyecto en github:</b></p>
-                <pre>git://github.com/vtellez/Seguimiento.git</pre>
+                <pre>git://github.com/vtellez/MailTrack.git</pre>
 
                 <p>ó</p>
 
-                <pre>https://github.com/vtellez/Seguimiento.git</pre>
+                <pre>https://github.com/vtellez/MailTrack.git</pre>
 
 
                         <section id="deploy"><br/>
@@ -277,32 +271,32 @@
                     
                     <pre>
                     <ul>
-                    <li><b>$PATH_A_Seguimiento</b>: Esta variable hace referencia a la ruta donde se ha desplegado la instalación. <br/>Por ejemplo, la ruta podría ser <code>/var/www/Seguimiento</code></li>
+                    <li><b>$PATH_A_MailTrack</b>: Esta variable hace referencia a la ruta donde se ha desplegado la instalación. <br/>Por ejemplo, la ruta podría ser <code>/var/www/MailTrack</code></li>
                     </ul>
                     </pre>
 
                         <section id="create_database"><br/>
                       <h2>Creación de la base de datos</h2>
                       
-                      <p>Creación del usuario en MySQL para Seguimiento de mensajes</p>
+                      <p>Creación del usuario en MySQL para MailTrack de mensajes</p>
                 <pre>
                  # mysql -uroot -p<br/>
                  Enter password: (el de root)
                  </pre>
                  <pre>
-                 mysql> GRANT ALL PRIVILEGES ON Seguimiento.* TO Seguimiento@localhost
-                        IDENTIFIED BY 'password-de-Seguimiento';
+                 mysql> GRANT ALL PRIVILEGES ON MailTrack.* TO MailTrack@localhost
+                        IDENTIFIED BY 'password-de-MailTrack';
                  </pre>
                  <pre>
-                 mysql> CREATE DATABASE Seguimiento;
+                 mysql> CREATE DATABASE MailTrack;
                  </pre>
                  <pre>
                  mysql> FLUSH PRIVILEGES;
                  </pre>
 
-                <p>Creación de las tablas de Seguimiento de mensajes</p>
+                <p>Creación de las tablas de MailTrack de mensajes</p>
                 <pre>
-                 # mysql -uSeguimiento -p Seguimiento < $PATH_A_Seguimiento/mysql-database/schema.sql
+                 # mysql -uMailTrack -p MailTrack < $PATH_A_MailTrack/mysql-database/schema.sql
                  </pre>
                       
 
@@ -314,48 +308,48 @@
                         <section id="general_config"><br/>
                       <h2>Configuración general (config.php)</h2>
 
-                <p>$PATH_A_Seguimiento/app/config/config.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Configurar este fichero para definir la dirección base de la aplicación, la lista de administradores, número de mensajes por página, etc etc. Crear directorio de logs de acuerdo a lo configurado en este fichero.</p>
+                <p>$PATH_A_MailTrack/app/config/config.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Configurar este fichero para definir la dirección base de la aplicación, la lista de administradores, número de mensajes por página, etc etc. Crear directorio de logs de acuerdo a lo configurado en este fichero.</p>
 
                         <br/>  
                         <section id="database_config"><br/>
                       <h2>Configuación de la base de datos (database.php)</h2>
 
-                <p>$PATH_A_Seguimiento/app/config/database.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye la información relativa a la base de datos de la aplicación así como al usuario para ésta, para permitir así la conexión desde php.</p>
+                <p>$PATH_A_MailTrack/app/config/database.php.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye la información relativa a la base de datos de la aplicación así como al usuario para ésta, para permitir así la conexión desde php.</p>
 
                         <br/>  
                         <section id="scripts_config"><br/>
                       <h2>Configuración de logs y scripts (config.pl)</h2>
 
-                <p>$PATH_A_Seguimiento/scripts/etc/config.pl.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye información acerca del proceso de parseado de los logs: Definición del dominio principal de la institución, tiempo de vida (en días) de los mensajes en la base de datos, configuración de datos para la conexión con la base de datos desde perl, etc.</p>
+                <p>$PATH_A_MailTrack/scripts/etc/config.pl.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". Este fichero incluye información acerca del proceso de parseado de los logs: Definición del dominio principal de la institución, tiempo de vida (en días) de los mensajes en la base de datos, configuración de datos para la conexión con la base de datos desde perl, etc.</p>
 
                         <section id="logs_config"><br/>
-                <p>$PATH_A_Seguimiento/scripts/etc/hosts.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". En este fichero debe incluirse la información de los logs que se quiera procesar. En el propio fichero esta incluido un ejemplo para comprender la sintaxis que se utiliza en el.</p>
+                <p>$PATH_A_MailTrack/scripts/etc/hosts.plantilla: Debe eliminarse de la extensión el sufijo ".plantilla". En este fichero debe incluirse la información de los logs que se quiera procesar. En el propio fichero esta incluido un ejemplo para comprender la sintaxis que se utiliza en el.</p>
 
-                <p>$PATH_A_Seguimiento/scripts/bin/actualiza.sh: En este fichero tan solo debe editarse la primera línea no comentada, que hace referencia a la ruta donde se encuentra alojado el directorio "scripts".</p>
+                <p>$PATH_A_MailTrack/scripts/bin/actualiza.sh: En este fichero tan solo debe editarse la primera línea no comentada, que hace referencia a la ruta donde se encuentra alojado el directorio "scripts".</p>
 
 
                         <section id="ssh_config"><br/>
                       <h2>Configuración sshs</h2>
-                <p>Seguimiento de mensajes obtiene los logs de las máquinas de forma remota utilizando un protocolo de transmisión de ficheros segura basado en el protocolo ssh (comando scp).</p>
+                <p>MailTrack de mensajes obtiene los logs de las máquinas de forma remota utilizando un protocolo de transmisión de ficheros segura basado en el protocolo ssh (comando scp).</p>
 
-                <p>Es por ello que para que el script principal funcione correctamente, debemos dar permiso a las máquinas remotas para que Seguimiento obtenga los logs sin necesidad de establecer un usuario y contraseña. Para ello, se utiliza los certificados de clave pública de la propia máquina.</p>
+                <p>Es por ello que para que el script principal funcione correctamente, debemos dar permiso a las máquinas remotas para que MailTrack obtenga los logs sin necesidad de establecer un usuario y contraseña. Para ello, se utiliza los certificados de clave pública de la propia máquina.</p>
 
                 <p>Deberemos copiar la clave pública de la máquina que procesará los logs (alojada generalmente en $HOME/.ssh/id_rsa.pub) en la lista de servidores autorizados en las máquinas remotas (definidas normalmente en el archivo $HOME/.ssh/authorized_keys)</p>
 
                         <section id="crontab_config"><br/>
                       <h2>Configuración crontab</h2>
 
-                <p>Seguimiento de mensajes, requiere que se añadan varias entradas en la lista de tareas automáticas del sistema:</p>
+                <p>MailTrack de mensajes, requiere que se añadan varias entradas en la lista de tareas automáticas del sistema:</p>
                 <pre>
-                #Seguimiento: Ejecución del script que recorre los logs de correo y los guarda en la base de datos<br/>
-                */10 0-4,6-23 * * * bash $PATH_A_Seguimiento/scripts/bin/actualiza.sh hosts > /tmp/salida<br/>
+                #MailTrack: Ejecución del script que recorre los logs de correo y los guarda en la base de datos<br/>
+                */10 0-4,6-23 * * * bash $PATH_A_MailTrack/scripts/bin/actualiza.sh hosts > /tmp/salida<br/>
                 <br/>
-                #Seguimiento: Cada dia borramos los mensajes y accesos más antiguos la base de datos<br/>
-                1 5 * * * bash $PATH_A_Seguimiento/scripts/bin/borrado_bbdd.sh<br/>
+                #MailTrack: Cada dia borramos los mensajes y accesos más antiguos la base de datos<br/>
+                1 5 * * * bash $PATH_A_MailTrack/scripts/bin/borrado_bbdd.sh<br/>
  
                <br/>
-                #Seguimiento: Calculo de indicadores por horas/días/meses<br/>
-                7 0 * * * perl $PATH_A_Seguimiento/scripts/bin/indicadores.pl<br/>
+                #MailTrack: Calculo de indicadores por horas/días/meses<br/>
+                7 0 * * * perl $PATH_A_MailTrack/scripts/bin/indicadores.pl<br/>
                 </pre>
 
                 <p>La primera de ellas hace referencia a la frecuencia con la que se quiere que se lean los logs de las distintas máquinas. Dicho de otra forma, con que margen de tiempo con respecto al tiempo real, queremos que se actualicen los datos en la base de datos. En este ejemplo, la frecuencia de parseo sería cada 10 minutos.</p>
@@ -378,7 +372,7 @@
           <div class="span6 small-screen-center">
             <h2 style="text-transform:none;">
               <a href="http://choquito.us.es/segj/">
-                Seguimiento
+                MailTrack
 	            </a>
                &nbsp;&nbsp;
               <a data-iconcolor="#42576a" href="http://github.com/vtellez/seguimiento">

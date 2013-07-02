@@ -11,10 +11,10 @@ body input, body textarea {
 .logo {
   font-family: 'Handlee';
   float: left;
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 25px;
   margin-bottom: 20px;
-  font-size: 55px;
+  font-size: 45px;
   color: #c8c8c8;
   text-shadow: 0px 2px 3px #555;
   text-decoration: none;
