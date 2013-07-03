@@ -4,5 +4,5 @@ server_port: 5555
 destination: ./_site
 pygments: true
 permalink: pretty
-url: http://seguimiento.org.es/
+url: http://mailtrack.info/
 appn: MailTrack
