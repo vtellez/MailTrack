@@ -1,8 +1,7 @@
-Seguimiento 
+MailTrack 
 ============
 
-Seguimiento is a Free Software web application
-that lets you know what happened to all your sent and received emails.
+MailTrack is a Free Software web application that lets you know what happened to all your sent and received emails.
 
 Released under GNU Affero General Public License
 (http://www.gnu.org/licenses/agpl-3.0.html).
@@ -11,19 +10,19 @@ Released under GNU Affero General Public License
 Official website
 ------------------
 
-You can find more info about this project at http://seguimiento.org.es/
+You can find more info about this project at http://mailtrack.info/
 
 
 Documentation
 ------------------
 
-You can find this project's documentation at http://seguimiento.org.es/doc/
+You can find this project's documentation at http://mailtrack.info/doc/
 
 
 Thanks
 ---------------
 
-Seguimiento is possible thanks to the following projects:
+MailTrack is possible thanks to the following projects:
 
 * [CodeIgniter](http://codeigniter.com)
 * [jQuery](http://jquery.com)
